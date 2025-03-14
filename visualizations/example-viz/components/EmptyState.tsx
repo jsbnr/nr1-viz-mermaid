@@ -16,8 +16,6 @@ const EmptyState: React.FC = () => (
         Please provide a valid mermaid definition.
        
       </HeadingText>
-
-  )
     </CardBody>
   </Card>
 );

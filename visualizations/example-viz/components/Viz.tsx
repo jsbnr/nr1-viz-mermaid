@@ -8,13 +8,13 @@ const Viz = () => {
   const vizProps = useProps();
   const { accountId, query, definition, ignorePicker, fetchInterval, defaultSince } = vizProps;
   
-  console.log(React.version)
+  // console.log(React.version)
   let data;
   if(query && query!="" && accountId && accountId!=""){ 
     ({ data } = useNerdGraphQuery(accountId, query, ignorePicker, fetchInterval, defaultSince));
-    if(data.length > 0 ) {
-      console.log("data",data)
-    } 
+    // if(data.length > 0 ) {
+    //   console.log("data",data)
+    // } 
   }
 
   return (
