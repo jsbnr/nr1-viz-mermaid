@@ -13,7 +13,7 @@ const EmptyState: React.FC = () => (
         spacingType={[HeadingText.SPACING_TYPE.LARGE]}
         type={HeadingText.TYPE.HEADING_3}
       >
-        Please provide a valid configuration.
+        Please provide a valid mermaid definition.
        
       </HeadingText>
 

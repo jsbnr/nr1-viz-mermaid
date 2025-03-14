@@ -2,6 +2,10 @@
 
 This visualization allows you to define a [Mermaid](https://mermaid.js.org) diagram and automatically hydrate it with the data from a NRQL query. It uses simple template interpolation to inject data.
 
+![screenshot1](./resources/mermaid.png)
+![screenshot2](./resources/mermaid_in_error.png)
+
+
 ## Installation
 
 - Clone the repo

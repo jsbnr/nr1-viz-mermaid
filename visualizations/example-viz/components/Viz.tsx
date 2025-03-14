@@ -3,7 +3,6 @@ import { useProps } from "../context/VizPropsProvider";
 import { useNerdGraphQuery } from "../hooks/useNerdGraphQuery";
 import HydratedMermaid from "./HydratedMermaid"
 import {Spinner} from "nr1"
-// import MermaidComponent  from "./Mermaid";
 
 const Viz = () => {
   const vizProps = useProps();
@@ -20,10 +19,7 @@ const Viz = () => {
 
   return (
         <>
-        {(data && data.length > 0) || query=="" ? <HydratedMermaid definition={definition} data={data} /> : <Spinner />}
-        {/* <MermaidComponent theme="light" chart={`flowchart LR
-    id
-    `} /> */}
+        {(data && data.length > 0) || (!query || query=="") ? <HydratedMermaid definition={definition} data={data} /> : <Spinner />}
         </>
   );
 };
