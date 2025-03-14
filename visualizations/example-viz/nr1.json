@@ -1,0 +1,44 @@
+{
+    "schemaType": "VISUALIZATION",
+    "id": "hydrated-mermaid-viz",
+    "displayName": "Mermaid Diagram",
+    "description": "",
+    "configuration": [
+        {
+            "name": "definition",
+            "title": "Definition",
+            "description": "Mermaid definition",
+            "type": "string"
+        },
+        {
+            "name": "accountId",
+            "title": "Account ID",
+            "description": "Account ID to be associated with the query",
+            "type": "account-id"
+        },
+        {
+            "name": "query",
+            "title": "Query",
+            "description": "NRQL query for visualization",
+            "type": "nrql"
+        },
+        {
+            "name": "ignorePicker",
+            "title": "Ignore time picker",
+            "description": "Check to ignore time picker",
+            "type": "boolean"
+        },
+        {
+            "name": "defaultSince",
+            "title": "Default since clause",
+            "description": "Since clause to use when no value selected in time picker",
+            "type": "string"
+        },
+        {
+            "name": "refreshInterval",
+            "title": "Refresh interval",
+            "description": "Time to wait before refreshing the visualization (seconds)",
+            "type": "number"
+        }
+    ]
+}
