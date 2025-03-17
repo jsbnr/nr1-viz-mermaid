@@ -12,11 +12,7 @@ const Viz = () => {
   let data;
   if(query && query!="" && accountId && accountId!=""){ 
     ({ data } = useNerdGraphQuery(accountId, query, ignorePicker, fetchInterval, defaultSince));
-    // if(data.length > 0 ) {
-    //   console.log("data",data)
-    // } 
   }
-
   return (
         <>
         {(data && data.length > 0) || (!query || query=="") ? <HydratedMermaid definition={definition} data={data} /> : <Spinner />}
