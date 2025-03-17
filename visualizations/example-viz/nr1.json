@@ -35,7 +35,7 @@
             "type": "string"
         },
         {
-            "name": "refreshInterval",
+            "name": "fetchInterval",
             "title": "Refresh interval",
             "description": "Time to wait before refreshing the visualization (seconds)",
             "type": "number"

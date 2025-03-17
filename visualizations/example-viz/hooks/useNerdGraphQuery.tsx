@@ -36,7 +36,7 @@ export const useNerdGraphQuery = ( accountId: string, query: string, ignorePicke
     };
 
     fetchData();
-
+    console.log("fetchInterval", fetchInterval)
     if (fetchInterval < 1) {
       console.log(
         `Fetch interval less than 1 second is not allowed. Setting to default: ${FETCH_INTERVAL_DEFAULT}s.`,
